@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //1.打印0-20之间的整数, 将每个数输出到控制台
+    // let i = 0
+    // while (i <= 20) {
+    //   console.log(i);
+    //   i++ //自增
+    // }
+
+
+    //2. 计算1-1000之间的累加和，并且打印输出到页面中
+    // let sum = 0
+    // let i = 1
+    // while (i <= 1000) {
+    //   sum += i
+    //   i++
+    // }
+    // document.write(`1-1000的相加和是:${sum}`)
+
+    //3.页面依次打印 100-200之间,可以被6整除的数字
+    // let i = 100;
+    // while (i <= 200) {
+    //   if (i % 6 === 0) {
+    //     document.write(`${i}<br>`)
+    //   }
+    //   i++;
+    // }
+
+    //4.用户弹窗输入两个数字，页面输出两个数字中的最大值（请使用三元运算符完成）
+    // let num1 = prompt('请输入第一个数字')
+    // let num2 = prompt('请输入第二个数字')
+    // let max = num1 > num2 ? num1 : num2;
+    // document.write(`两数的最大值为:${max}`)
+
+    //5.用户输入一个数，  计算 1 到这个数的累加和**
+    // 比如 用户输入的是 5， 则计算 1~5 之间的累加和
+    // 比如用户输入的是10， 则计算 1~10 之间的累加和
+    // let num = +prompt("请输入随机数字")
+    // let i = 1;
+    // let sum = 0;
+    // while (i <= num) {
+    //   sum += i;
+    //   i++;
+    // }
+    // document.write(`数字1~${num}的和为:${sum}`)
+
+    //6. **输出成绩案例（请使用if多分支来书写程序）**
+    // 题目描述：
+    // 接收用户输入的分数，根据分数输出对应的等级字母 A、B、C、D、E，
+    // - 90分(含)以上 ，输出：A
+    //   80分(含)~ 90 分(不含)，输出：B
+    //    70分(含)~ 80 分(不含)，输出：C
+    //    60分(含)~ 70 分(不含)，输出：D
+    // - 60分(不含) 以下，输出 E
+
+    // let score = prompt('请输入您的分数')
+    // if (score >= 90) {
+    //   alert('A')
+    // } else if (score >= 80) {
+    //   alert('B')
+    // } else if (score >= 70) {
+    //   alert('C')
+    // } else if (score >= 60) {
+    //   alert('D')
+    // } else {
+    //   alert('E')
+    //
+    //7.**用户登录验证**
+    // 题目描述：
+    // 接收用户输入的用户名和密码，若用户名为 “admin” ,且密码为 “123456” ,则提示用户登录成功!  否则，让用户一直输入。
+
+
+    while (true) {
+      let uname = prompt('请输入用户名')
+      let pwd = +prompt('请输入密码')
+      if (uname === 'admin' && pwd === 123456) {
+        break;
+      }
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //类型转换
+    // let num1 = prompt('请输入第一个数:')
+    // console.log(typeof num1);//控制台显示是 string类型
+
+    //1.隐式类型转换
+    // console.log(1 + 1);//2
+    // console.log('pink' + 1);//pnik1
+    // console.log(2 + '2');//22
+    // console.log(2 - 2);//0
+    // console.log(2 - '1');//1
+    // console.log(+12);
+    // console.log(+'123');//+号作为正号可以转换成数字类型
+
+    //2.显示转换  自己写代码告诉系统是什么类型
+    let str = '123'
+    console.log(Number(str));
+    console.log(Number('pink'));
+    //let num = Number(prompt('输入你的年薪'))
+    let num = +prompt('输入你的年薪')
+    console.log(num);
+    console.log(parseInt('12px'));
+    console.log(parseInt('12.24px'));
+    console.log(parseInt('12.94px'));
+    //----------------
+    console.log(parseFloat('12px'));//12
+    console.log(parseFloat('12.24px'));//12.24
+    console.log(parseFloat('12.94px'));//12.94
+    console.log(parseFloat('abc12.4px'));
+
+  </script>
+</body>
+
+</html>
